@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon/images (1).png">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,10 +29,10 @@
     <!-- MAIN -->
     <main>
         <section class="home" id="home">
-            <div class="text">
-                <h3>Hello, my name is Oybek</h3>
-                <h1>My surname Abdusattorov</h1>
-                <h2>Frontend Developer</h2>
+            <div class="text" data-aos="fade-up-left">
+                <h3>Salom, mening ismim Oybek</h3>
+                <h1>Mening familiyam Abdusattorov</h1>
+                <h2>Frontend Dasturchi</h2>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur
@@ -41,12 +44,12 @@
             </div>
 
             <div class="image">
-                <img src="./images/hero.jpg" alt="Profile">
+                <img src="./images/hero.jpg" data-aos="fade-down-right" alt="Profile">
             </div>
         </section>
 
         <!-- ABOUT -->
-        <section class="about" id="about">
+        <section class="about" data-aos="zoom-in" id="about">
 
             <h2>About Me</h2>
             <img class="about_img" src="./images/about.png" alt="">
@@ -67,28 +70,24 @@
 
             <div class="cards">
 
-                <div class="card">
-                    <img width="100px"
-                        src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fcdn-icons-png.freepik.com%2F512%2F1532%2F1532556.png&sp=1783599066T916e4c41ab135bb84585617548eeaa52d3f91733f360ac1af4560036041043b7"
-                        alt="">
+                <div class="card" data-aos="fade-up" data-aos-duration="3000">
+                    <img width="100px" src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="">
                     <h3>HTML</h3>
                     <p>Kodlar yozish.</p>
                 </div>
 
-                <div class="card">
-                    <img width="100px"
-                        src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fcss3-logo-png-transparent.png&sp=1783599206Tadbda37addbfd7f7c716c9b5f1c503b2f6827541b6a6bdb0c2aba3c5236ff120"
-                        alt="">
+                <div class="card" data-aos="zoom-in-up">
+                    <img width="100px" src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="">
                     <h3>CSS</h3>
                     <p>Dizayin berish.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-down">
                     <img width="100px"
-                        src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F470-4707396_javascript-icon-html-css-js-icons.png&sp=1783599128Tab168f0eaad7ac09636c131e22100624394b606c9b05774090b2863df3f1563f"
+                        src="https://static.vecteezy.com/system/resources/previews/027/127/560/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
                         alt="">
-                    <h3>JavaScrip</h3>
-                    <p>Google ga qoyish.</p>
+                    <h3>JavaScript</h3>
+                    <p>Interaktiv funksiyalar yaratish.</p>
                 </div>
 
             </div>
@@ -100,21 +99,24 @@
 
             <h2>Projects</h2>
 
-            <div class="cards">
+            <div class="cards img_proects">
 
-                <div class="card">
+                <div class="card" data-aos=" fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h3>Project 1</h3>
-                    <p>Online and offline css</p>
+
+                    <a target=" _blank" href="https://house-eosin-omega.vercel.app/"> <img src="./images/proect1.jpg"
+                            alt=""></a>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-down-left">
                     <h3>Project 2</h3>
-                    <p>Portfolio Website</p>
+                    <a target="_blank" href="https://sale-home-two.vercel.app/"> <img src="./images/proect2.jpg"
+                            alt=""></a>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <h3>Project 3</h3>
-                    <p>Landing Page</p>
+                    <a href=""> <img src="./images/proect3.jpg" alt=""></a>
                 </div>
 
             </div>
@@ -122,11 +124,11 @@
         </section>
 
         <!-- CONTACT -->
-        <section class="contact" id="contact">
+        <section class="contact" data-aos="fade-down" id="contact">
 
             <h2>Contact</h2>
 
-            <p>Email: oybek014@gamil.com</p>
+            <p>Email: oybek014@gmail.com</p>
             <p>Telegram: @Oybek14</p>
 
         </section>
@@ -135,8 +137,13 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 My Portfolio</p>
+        <p>© 2026 My Portfolio by Oybek</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
