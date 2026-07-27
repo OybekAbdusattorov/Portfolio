@@ -126,7 +126,7 @@ button:hover {
     object-fit: cover;
 }
 
-.image img:hover{
+.image img:hover {
     transform: translateX(-10px);
     box-shadow: 0 0 35px #033c97;
 }
@@ -275,6 +275,72 @@ button:hover {
 .contact p {
     font-size: 18px;
     margin: 15px 0;
+}
+
+/* contakt */
+
+.contakt h2 {
+    text-align: center;
+    color: rgb(35, 35, 173);
+    font-size: 37px;
+}
+
+.contact-form {
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    /* outline: none; */
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+
+.contact-form button {
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #0d6efd, #3d8bfd);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 35px rgba(13, 110, 253, .35);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 2px solid #66b3ff;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #b7c7e6;
 }
 
 /* footer */
